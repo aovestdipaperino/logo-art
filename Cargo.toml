@@ -1,0 +1,21 @@
+[package]
+name = "logo-art"
+version = "0.1.0"
+edition = "2024"
+description = "Convert images to Unicode/True Color ANSI art for terminal display"
+license = "MIT"
+repository = "https://github.com/aovestdipaperino/logo-art"
+homepage = "https://github.com/aovestdipaperino/logo-art"
+authors = ["Enzo Lombardi"]
+readme = "README.md"
+keywords = ["ansi", "image", "terminal", "unicode", "ascii-art"]
+categories = ["command-line-interface", "multimedia::images"]
+
+[dependencies]
+image = { version = "0.25", default-features = false, features = ["png"] }
+
+[[example]]
+name = "cli"
+
+[[example]]
+name = "gen_logo"
