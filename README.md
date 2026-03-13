@@ -1,5 +1,9 @@
 # logo-art
 
+<p align="center">
+  <img src="assets/logo.png" alt="logo-art" width="256">
+</p>
+
 Convert images to Unicode/True Color ANSI art for terminal display.
 
 Uses half-block characters (`▄`/`▀`) to pack two pixel rows per terminal line with 24-bit true color escape sequences. Algorithm ported from [dom111/image-to-ansi](https://github.com/dom111/image-to-ansi).
