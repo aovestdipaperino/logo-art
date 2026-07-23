@@ -1,6 +1,11 @@
 # logo-art
 
 <p align="center">
+  <a href="https://ai.enzolombardi.net/"><img src="https://img.shields.io/badge/built%20with-AI-D97757?style=flat-square&labelColor=101010&logo=anthropic&logoColor=white" alt="Built with AI — part of Enzo Lombardi's AI portfolio"></a>
+</p>
+
+
+<p align="center">
   <img src="assets/logo.png" alt="logo-art" width="256">
 </p>
 
