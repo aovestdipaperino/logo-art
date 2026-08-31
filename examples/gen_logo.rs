@@ -43,7 +43,11 @@ fn main() {
             let (r, g, b) = hsv_to_rgb(hue, 0.80, 0.95 * vignette);
 
             // Anti-alias the outer rounded-rect edge
-            let alpha = if d < -0.5 { 255 } else { ((0.5 - d) * 255.0) as u8 };
+            let alpha = if d < -0.5 {
+                255
+            } else {
+                ((0.5 - d) * 255.0) as u8
+            };
 
             img.put_pixel(x, y, Rgba([r, g, b, alpha]));
         }
@@ -77,7 +81,9 @@ fn hsv_to_rgb(h: f64, s: f64, v: f64) -> (u8, u8, u8) {
         _ => (c, 0.0, x),
     };
 
-    (((r + m) * 255.0) as u8,
-     ((g + m) * 255.0) as u8,
-     ((b + m) * 255.0) as u8)
+    (
+        ((r + m) * 255.0) as u8,
+        ((g + m) * 255.0) as u8,
+        ((b + m) * 255.0) as u8,
+    )
 }
